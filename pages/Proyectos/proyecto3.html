@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto: Museo de Arte Moderno</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/syles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Edgar Rosendo Espinoza</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/index.html">Página Principal</a></li>
+                <li class="nav-item"><a class="nav-link" href="/pages/proyectos.html">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="carrera.html">Carrera Profesional</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Proyecto Detalle Section -->
+    <section class="proyecto-detalle-section py-5">
+        <a href="/pages/proyectos.html" class="btn-retorno">← Volver a Proyectos</a>
+        <div class="container">
+            <h2 class="text-center mb-4">Remodelación del Museo de Arte Moderno "Raúl Anguiano"</h2>
+            <p class="text-center text-muted">Un proyecto de remodelación enfocado en ampliar las secciones del museo y crear nuevas secciones para las futuras exposiciones</p>
+
+            <!-- Carrusel de Imágenes -->
+            <div id="proyectoCarrusel" class="carousel slide mb-5" data-ride="carousel" data-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/img/proyecto1_vista1.jpg" class="d-block w-100 proyecto-img" alt="Vista 1" onerror="this.onerror=null; this.src='/img/cargando.gif';">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/proyecto1_vista2.jpg" class="d-block w-100 proyecto-img" alt="Vista 2" onerror="this.onerror=null; this.src='/img/cargando.gif';">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/proyecto1_vista3.jpg" class="d-block w-100 proyecto-img" alt="Vista 3" onerror="this.onerror=null; this.src='/img/cargando.gif';">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#proyectoCarrusel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#proyectoCarrusel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+
+            <!-- Descripción del Proyecto -->
+            <div class="proyecto-descripcion">
+                <h3>Descripción del Proyecto</h3>
+                <p>Esta moderna residencia fue diseñada con un enfoque en la sostenibilidad y la funcionalidad. Utiliza una combinación de materiales ecológicos y tecnologías de eficiencia energética para reducir su impacto ambiental. Las líneas minimalistas y la incorporación de luz natural a través de grandes ventanales crean un ambiente abierto y acogedor.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

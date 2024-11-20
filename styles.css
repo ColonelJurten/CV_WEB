@@ -1,0 +1,101 @@
+/* ##################################################################################################### */
+
+/* Sección de Carrera Profesional */
+.carrera-section {
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 60px 0;
+    position: relative;
+}
+
+/* Línea de tiempo central */
+.timeline {
+    position: relative;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.timeline-item.left {
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.timeline-item.right {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+.timeline-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.timeline-content::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #6c757d;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Conectores en la línea de tiempo */
+.timeline-item.left .timeline-content::before {
+    right: -10px;
+}
+
+.timeline-item.right .timeline-content::before {
+    left: -10px;
+}
+
+/* Línea central */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    background-color: #333;
+    top: 0;
+    bottom: 0;
+    margin-left: -2px;
+}
+
+/* Fecha de la línea de tiempo */
+.timeline-date {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+/* Título y descripción */
+.timeline h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.timeline p, .location {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.location {
+    color: #777;
+}
+
